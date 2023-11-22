@@ -14,7 +14,7 @@ public class Task_6 {
         10	20	30	40	50	60	70	80	90	100
  */
 
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 10; i++) {
             for (int j = 1; j <= 10; j++) {
                 System.out.print(i*j+"\t");
             }
