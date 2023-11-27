@@ -2,6 +2,7 @@ package Week4._03_Wednesday;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Array {
     public static void main(String[] args) {
@@ -40,7 +41,7 @@ public class Array {
 //        arrayList.add(654);
 //        System.out.println(arrayList);
         ArrayList<ArrayList<Integer>> anotherArrayList = new ArrayList<>();
-        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(425,326,7643,384));
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(425,326,7643,384,56,56,56));
         ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(634,846,12,43));
         ArrayList<Integer> list3 = new ArrayList<>(Arrays.asList(45,7346));
         ArrayList<Integer> list4 = new ArrayList<>(Arrays.asList(76,23,12));
@@ -48,6 +49,7 @@ public class Array {
         anotherArrayList.add(list2);
         anotherArrayList.add(list3);
         anotherArrayList.add(list4);
+        System.out.println(anotherArrayList.get(0));
 //        System.out.println(anotherArrayList);
 //        System.out.println(anotherArrayList.get(0).get(1));
 //        anotherArrayList.get(1).add(56);
@@ -65,5 +67,8 @@ int counter = 0;
             }
         }
         System.out.println(counter);
+        anotherArrayList.get(0).removeAll(Collections.singleton(56));
+        System.out.println(anotherArrayList.get(0));
     }
+
 }
