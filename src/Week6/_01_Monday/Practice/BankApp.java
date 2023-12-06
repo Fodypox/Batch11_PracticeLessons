@@ -12,7 +12,13 @@ public class BankApp {
     }
 
     public void withdrowMoney(int amount){
-        System.out.println("the money amount was withdrown");
+        if (this.balance>=amount){
+            this.balance-=amount;
+            System.out.println("the money amount was withdrown");
+        }else {
+            System.out.println("not enough funds on your balance");
+        }
+
     }
     public void depositMoney(int amount){
         this.balance+=amount;

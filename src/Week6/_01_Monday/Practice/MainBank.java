@@ -6,6 +6,10 @@ public class MainBank {
         System.out.println(myAccount.showTheBalance());
         myAccount.depositMoney(100);
         System.out.println(myAccount.showTheBalance());
+        myAccount.withdrowMoney(250);
+        System.out.println(myAccount.showTheBalance());
+        myAccount.withdrowMoney(100);
+        System.out.println(myAccount.showTheBalance());
 
     }
 }
