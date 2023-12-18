@@ -20,9 +20,13 @@ public class Fish extends Animal{
     public void eating() {
         System.out.println("Fish is eating");
     }
+
     public void swimming(){
         if (this.isOcean()){
-            System.out.println("");
+            System.out.println("The fish is swimming in the Ocean");
+        }else {
+            System.out.println("The fish is swimming in a river");
         }
     }
+
 }
