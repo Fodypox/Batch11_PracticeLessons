@@ -12,7 +12,7 @@ public class ArmstrongNumber {
         originalNum = number;
         while (originalNum != 0){
             remainder = originalNum%10;
-            remainder+=Math.pow(remainder,n);
+            result+=Math.pow(remainder,n);
             originalNum/=10;
         }
         return result==number;
